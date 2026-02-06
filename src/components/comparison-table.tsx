@@ -1,6 +1,5 @@
 import { Product, ProductAttribute } from "@/types/gear";
 import { AffiliateButton } from "./affiliate-button";
-import { Badge } from "@/components/ui/badge";
 
 interface ComparisonTableProps {
   title: string;
