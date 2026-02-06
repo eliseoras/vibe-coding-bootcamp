@@ -1,0 +1,92 @@
+Product Requirements Document (PRD)
+
+Product: Camping Gear Affiliate Website
+Owner: Elise
+Status: Draft
+Target Release: MVP in ~4–6 weeks
+Core Team: Product (you), Content, Web Dev, SEO
+
+1. Objective
+
+Create a content-driven website focused on camping gear that helps readers make smart buying decisions and generates passive income through Amazon affiliate links.
+
+This site exists to:
+
+Capture organic search traffic around camping gear questions
+
+Provide practical, experience-based recommendations
+
+Monetize through affiliate commissions without selling directly
+
+2. Success Metrics
+Goal	Metric	Target
+Drive organic traffic	Monthly organic sessions	5,000+ by month 6
+Monetize content	Amazon affiliate conversion rate	3–5%
+Revenue	Monthly affiliate revenue	$500+ by month 6
+Engagement	Avg. time on page	2+ minutes
+SEO traction	Keywords ranking in top 20	25+
+3. Assumptions
+
+Users are researching gear before buying, not impulse shopping
+
+Most traffic will come from mobile (60–70%)
+
+Readers value real-world use cases over specs
+
+Amazon is trusted and reduces checkout friction
+
+SEO + evergreen content will outperform paid traffic early on
+
+4. Options & Product Requirements
+Requirement	User Story	Priority	Notes
+SEO-optimized blog posts	As a camper, I want clear advice so I don’t buy the wrong gear	High	Keyword-led, not brand-led
+Amazon affiliate links	As a reader, I want a quick way to buy what’s recommended	High	Use native Amazon links
+Category hubs	As a user, I want to browse by gear type	High	Tents, cooking, sleeping, kids
+Comparison tables	As a buyer, I want to compare options fast	Medium	Lightweight, mobile-friendly
+Disclosure compliance	As a site owner, I need to stay compliant	High	FTC + Amazon rules
+Fast page load	As a mobile user, I won’t wait	High	Core Web Vitals matter
+Email capture	As a reader, I want gear checklists	Medium	For future monetization
+5. Content Scope (MVP)
+
+Content Types
+
+“Best X for Y” (e.g. best camping stove for families)
+
+Experience-based reviews
+
+Packing lists
+
+Seasonal guides
+
+Safety and beginner content
+
+Tone
+
+Practical
+
+Experience-driven
+
+Honest about tradeoffs
+
+Not salesy
+
+6. Supporting Documentation
+
+Keyword research spreadsheet
+
+Content outline / editorial calendar
+
+Wireframes for:
+
+Blog post template
+
+Category hub page
+
+Amazon Associates compliance checklist
+
+7. Open Questions
+Question	Status	Notes
+Single niche or broad camping?	Open	Start broad, narrow later
+Brand voice (personal vs neutral)?	Open	Likely personal for trust
+International Amazon links?	Open	Can add later
+Display ads later?	Open	After traffic grows
