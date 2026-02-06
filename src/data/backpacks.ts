@@ -1,4 +1,5 @@
 import { Product } from "@/types/gear";
+import { getAmazonProductLink } from "@/lib/affiliate";
 
 export const backpackMetrics = [
   { key: "capacity", label: "Capacity (L)" },
@@ -14,7 +15,7 @@ export const backpackProducts: Product[] = [
     name: "Osprey Atmos AG 65",
     image:
       "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=300&h=300",
-    affiliateLink: "https://amazon.com",
+    affiliateLink: getAmazonProductLink("B09J5T7M95"), // Using placeholder ASIN - Replace with real Atmos ASIN later
     isTopPick: true,
     specs: {
       capacity: { label: "Capacity", value: "65 L" },
@@ -33,7 +34,7 @@ export const backpackProducts: Product[] = [
     name: "Gregory Baltoro 65",
     image:
       "https://images.unsplash.com/photo-1622383838356-d7b822d05775?auto=format&fit=crop&q=80&w=300&h=300",
-    affiliateLink: "https://amazon.com",
+    affiliateLink: getAmazonProductLink("B09M8R8R2T"), // Using placeholder ASIN - Replace with real Baltoro ASIN later
     specs: {
       capacity: { label: "Capacity", value: "65 L" },
       weight: { label: "Weight", value: "4 lbs 13 oz" },
