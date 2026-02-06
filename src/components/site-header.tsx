@@ -1,7 +1,17 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useSearch } from "@/hooks/use-search";
+import { useState } from "react";
 
 export function SiteHeader() {
+  const { handleSearch } = useSearch();
+  const [query, setQuery] = useState("");
+
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    handleSearch(query);
+  };
+
   return (
     <header className="border-border bg-background sticky top-0 z-50 flex items-center justify-between border-b px-4 py-3 transition-colors duration-200 md:px-10">
       <div className="flex items-center gap-8">
@@ -55,17 +65,22 @@ export function SiteHeader() {
       </div>
 
       <div className="flex flex-1 justify-end gap-4">
-        <label className="flex hidden !h-10 max-w-64 min-w-40 flex-col lg:flex">
+        <form
+          onSubmit={onSubmit}
+          className="flex hidden !h-10 max-w-64 min-w-40 flex-col lg:flex"
+        >
           <div className="flex h-full w-full flex-1 items-stretch overflow-hidden rounded-lg">
             <div className="text-muted-foreground bg-muted flex items-center justify-center border-r-0 border-none pl-4">
               <span className="material-symbols-outlined text-xl">search</span>
             </div>
             <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
               className="text-foreground bg-muted placeholder:text-muted-foreground/70 flex h-full w-full min-w-0 flex-1 resize-none overflow-hidden border-none px-4 pl-2 text-base leading-normal font-normal focus:ring-0 focus:outline-0"
               placeholder="Search gear..."
             />
           </div>
-        </label>
+        </form>
         <Button className="font-bold">
           <span className="truncate">Join Newsletter</span>
         </Button>
